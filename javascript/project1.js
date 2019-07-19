@@ -15,22 +15,4 @@
   var database = firebase.database();
   var ref = database.ref('scores')
 
-  var address = 
-//   var data = {
-//       rock: "Rock",
-//       paper: "Paper",
-//       scissors: "Scissors"
-//   }
-//   console.log(data);
-//   ref.push(data);
-
-
-//   function rock1(){
-//       ref.push(data.rock)
-//   }
-//   function paper1(){
-//       ref.push(data.paper)
-//   }
-//   function scissors1(){
-//       ref.push(data.scissors)
-//   }
+  
