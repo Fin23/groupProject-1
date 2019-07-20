@@ -16,26 +16,3 @@ $.ajax({
 
 //end of document.ready fn.
 });
-//nav bar functions for buttons
-
-
-//  function News(){
-    
-
-//  }
-// function Politics(){
-
-//  }
-//  function Tech(){
-
-// }
-//  function Style(){
-
-//  }
-//  function Sports(){
-
-//  }
-//  function Food(){
-
-//  }
-//end of nav bar button functions
