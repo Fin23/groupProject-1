@@ -1,10 +1,11 @@
 
-$(document).ready(function(){
+$(document).on("click", function(){
+    $("")
     
 
 
 
-var newsQuery = "https://api-beta.civicfeed.com/news/search?results=10" + type + "";
+var newsQuery = "https://api-beta.civicfeed.com/news/search?results=10" ;
 
 $.ajax({
     url:queryURL,
@@ -18,23 +19,23 @@ $.ajax({
 //nav bar functions for buttons
 
 
-// function News(){
+ function News(){
     
 
-// }
-// function Politics(){
+ }
+function Politics(){
 
-// }
-// function Tech(){
+ }
+ function Tech(){
 
-// }
-// function Style(){
+}
+ function Style(){
 
-// }
-// function Sports(){
+ }
+ function Sports(){
 
-// }
-// function Food(){
+ }
+ function Food(){
 
-// }
+ }
 //end of nav bar button functions
