@@ -29,13 +29,18 @@ var data = {
 
 }
 console.log(data);
-<<<<<<< HEAD
-//ref.push(data); (will push data object to fire base on refresh)
-=======
+
 
 
 //ref.push(data); (this will push everything in the data oject when page refreshes)
->>>>>>> e4a851b630aed61162ad184aa3f2571f67b59e03
+
+
+//ref.push(data); (will push data object to fire base on refresh)
+
+
+
+//ref.push(data); (this will push everything in the data oject when page refreshes)
+
 
 
 function News(){
