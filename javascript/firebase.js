@@ -29,7 +29,10 @@ var data = {
 
 }
 console.log(data);
-//ref.push(data); (will push data object to fire base on refresh)
+
+
+//ref.push(data); (this will push everything in the data oject when page refreshes)
+
 
 
 function News(){
