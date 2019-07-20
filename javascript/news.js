@@ -1,0 +1,1 @@
+var newsQuery = "https://api-beta.civicfeed.com/news/search?results=10" + type + "";
