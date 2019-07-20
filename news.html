@@ -5,28 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                         <!--css links-->
+    <!--css links-->
     <!--<link rel="stylesheet" type="text/css" href="css/project1.css">-->
-    <link rel="stylesheet" type = "text/css" href="css/news.css">
+    <link rel="stylesheet" type="text/css" href="css/news.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-                            <!--bootstrap-->
+    <!--bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-   
-                             <!--firebase-->
+
+    <!--firebase-->
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-
     <title>Document</title>
 </head>
-<header>Local News</header>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">News</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-    </button>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -59,12 +58,16 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
 
-        </div>
+        </div class="btn-group-vertical">
+        <button type="button" class="btn btn-secondary btn-sm" id="button2">Change Zip</button>
+        <button type="button" class="btn btn-secondary btn-sm" id="button2">Refresh</button>
     </nav>
 
-    <div class ="row">
-        <div id ="recent_news" class ="five2">most recent news</div>
-        <div id = "news_by_location" class ="five2">news closest by location</div>
+
+    <div class="row">
+        <div id="recent_news" class="five2">most recent news</div>
+        <div id="news_by_location" class="five2">news closest by location</div>
+        <div id="favorites" class="five3">saved articles</div>
     </div>
 
 
