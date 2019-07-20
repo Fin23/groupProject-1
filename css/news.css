@@ -1,6 +1,4 @@
-body{ 
-    background-image
-}
+
 .five2 {
 	width: 40.5%; /* This div spans five columns */
 	margin-left: 2%;
@@ -8,4 +6,6 @@ body{
     border: 4px solid black;
     height: 400px;
     text-align:center;
+    background-color: grey;
+    
 }
