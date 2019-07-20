@@ -16,7 +16,3 @@ $.ajax({
 
 //end of document.ready fn.
 });
-<<<<<<< HEAD
-
-=======
->>>>>>> e4a851b630aed61162ad184aa3f2571f67b59e03
