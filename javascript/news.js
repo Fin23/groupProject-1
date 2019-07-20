@@ -19,23 +19,23 @@ $.ajax({
 //nav bar functions for buttons
 
 
- function News(){
+//  function News(){
     
 
- }
-function Politics(){
+//  }
+// function Politics(){
 
- }
- function Tech(){
+//  }
+//  function Tech(){
 
-}
- function Style(){
+// }
+//  function Style(){
 
- }
- function Sports(){
+//  }
+//  function Sports(){
 
- }
- function Food(){
+//  }
+//  function Food(){
 
- }
+//  }
 //end of nav bar button functions
