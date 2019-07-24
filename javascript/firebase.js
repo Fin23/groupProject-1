@@ -1,4 +1,8 @@
+
 // Your web app's Firebase configuration
+
+
+
   var firebaseConfig = {
     apiKey: "AIzaSyAjlpHCqwEKl2Pii4bLIE9yBMVx2PsPd-Q",
     authDomain: "groupproject1-ae982.firebaseapp.com",
@@ -7,32 +11,63 @@
     storageBucket: "groupproject1-ae982.appspot.com",
     messagingSenderId: "646862267515",
     appId: "1:646862267515:web:27b1bade313e596f"
+
   };
+
+  
+
+
+
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   console.log(firebaseConfig);
 
-  var database = firebase.database();
-  var ref = database.ref('scores')
+  
+var database = firebase.database();
 
- // var address = 
-//   var data = {
-//       rock: "Rock",
-//       paper: "Paper",
-//       scissors: "Scissors"
-//   }
-//   console.log(data);
-//   ref.push(data);
+//testing news html section to push to firebase
+var ref =database.ref('catagories')
+
+var data = {
+    News: "News",
+    Politics: "Politics",
+    Tech: "Tech",
+    Style:"Style",
+    Sports:"Sports",
+    Food:"Food"
+
+}
+console.log(data);
 
 
-//   function rock1(){
-//       ref.push(data.rock)
-//   }
-//   function paper1(){
-//       ref.push(data.paper)
-//   }
-//   function scissors1(){
-//       ref.push(data.scissors)
-//   }
 
-//Running Modal Window
+//ref.push(data); (this will push everything in the data oject when page refreshes)
+
+
+//ref.push(data); (will push data object to fire base on refresh)
+
+
+
+//ref.push(data); (this will push everything in the data oject when page refreshes)
+
+
+
+function News(){
+    ref.push(data.News)
+}
+function Politics(){
+    ref.push(data.Politics)
+}
+function Tech(){
+    ref.push(data.Tech)
+}
+function Style(){
+    ref.push(data.Style)
+}
+function Sports(){
+    ref.push(data.Sports)
+}
+function Food(){
+    ref.push(data.Food)
+}
+
