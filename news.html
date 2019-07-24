@@ -13,7 +13,14 @@
     <!--bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
- 
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
 
 
 
@@ -35,6 +42,19 @@
 </head>
 
 <body>
+        <div class = "container">
+                <h3 class ="center" styler = "margin-bottom:20px">Hause-Book News<i class ="material icons medium hide-on-small-only" id="icons"></i></h3>
+              
+              <div id="loader" style = "display:none;"> 
+                <div class = "progress">
+                  <div class = "inderterminate">
+                    </div>
+                      </div>
+                        </div>
+        
+              <div id = "newsResults">
+                </div>
+                    </div>
 
 
 
@@ -77,9 +97,15 @@
             </ul>
 
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+                <div class ="input-field">
+                    <i class = "material-icons prefix">public</i>
+                        <input id ="searchquery" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            </div>
+                                <button id = "searchbtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                    <input type = "reset" id = "searchbtn" class = "btn col m2 s12 red right" value="clear" style = "margin-top:3px;">
+                            </form>
+
+
 
         </div class="btn-group-vertical">
         <button type="button" class="btn btn-secondary btn-sm" id="button2">Change Zip</button>
@@ -111,22 +137,17 @@
 
     <!--firebase-->
 
-    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+   
 
-    <script src="javascript/firebase.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
 
     <script src="javascript/news.js"></script>
 
             <!--firebase-->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
                                  
-          
             
             <script src="javascript/firebase.js"></script>
-            
-    
             <script src ="javascript/news.js"></script>
 
 </body>
