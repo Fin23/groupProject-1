@@ -1,4 +1,8 @@
 
+// Your web app's Firebase configuration
+
+
+
   var firebaseConfig = {
     apiKey: "AIzaSyAjlpHCqwEKl2Pii4bLIE9yBMVx2PsPd-Q",
     authDomain: "groupproject1-ae982.firebaseapp.com",
@@ -7,13 +11,18 @@
     storageBucket: "groupproject1-ae982.appspot.com",
     messagingSenderId: "646862267515",
     appId: "1:646862267515:web:27b1bade313e596f"
-  }
+
+  };
+
+  
+
 
 
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   console.log(firebaseConfig);
 
+  
 var database = firebase.database();
 
 //testing news html section to push to firebase
@@ -61,3 +70,4 @@ function Sports(){
 function Food(){
     ref.push(data.Food)
 }
+
