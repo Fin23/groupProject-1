@@ -26,13 +26,27 @@ $(document).ready(function(){
     
     for(var i in latestNews){
         output += `
+        <div class="five2">
         <h4>${latestNews[i].title}</h4>
-        <img src="${latestNews[i].urlToImage}">
+        
         <p>${latestNews[i].description}</p>
         <p>${latestNews[i].content}</p>
         <p>Publish on: ${latestNews[i].publishedAt}</p>
-        <a>${latestNews[i].url}</a>
+        <a href="${latestNews[i].url}" class ="btn"> Read some news</a>
+       </div>
         `;
+    }
+    if(output !== ""){
+        $("#recent_news").html(output);
+        M.toast({
+            html: "there you go, nice reading",
+            classes: 'green'
+        })
+
+    }else{
+        let NewsNotFound = "This news isn't available.";
+        $("#recent_news").html("<div style = ' font-size:40px; text-align:center;'>"+ NewsNotFound+"</div>")
+        
     }
     },
     error: function(){
@@ -59,3 +73,4 @@ $(document).ready(function(){
     //let url = "https://api-beta.civicfeed.com/codify/search?&apiKey=IUc327VfgV8wXOBxEmFge7BZplpHPmhF7sFDC5rV";
     
      
+//<img src="${latestNews[i].urlToImage}"></img>    col 16 m6 s12
