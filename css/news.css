@@ -8,7 +8,7 @@
     border: 4px solid black;
     height: 400px;
     text-align:center;
-    background-color: grey;
+    background-color: #f57b64;
     
 }
 
@@ -21,7 +21,7 @@
     border: 4px solid black;
     height: 400px;
     text-align:center;
-    background-color: grey;
+    background-color: #f57b64;
 }
 
 
@@ -32,10 +32,42 @@
     font-size: 8px;
     display: block;
 }
-
 #button2:hover {
-background: grey;
+background: #f57b64;
 }
 .input-field{
     background-color: white;
 }
+p{ 
+     padding-bottom: 15px;
+    text-align:center;
+    background-color: #f57b64;
+}
+ .seven2{
+    width: 57.5%;
+	float: center;
+	margin-left: 22%;
+ }
+ .border1{
+     margin-top:5%;
+     border: solid #3f4249 15px;
+     border-bottom: 7px;
+     border-radius: 5%;
+ }
+ .center{
+    margin-left:25%;
+    top: 50%;
+    width: 50%;
+    text-align: center;
+    color:white;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    border: 1px solid #dee2e6!important;
+    background-color: #111;
+    padding: 20px;
+}
+
+
+
+
