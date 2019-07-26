@@ -6,6 +6,13 @@
 
 //  $(document).on('click', function () {
 
+  $('#reg-link').on('click', function (evt){
+    evt.preventDefault()
+    console.log('i see you');
+    $('#myModal').modal('hide');
+     $('#loginModal').modal('show');
+  })
+
     $('#myModal').modal('show');
 
     var modal = document.getElementById("myModal");
@@ -31,12 +38,15 @@
       if (event.target == modal) {
         modal.style.display = "none";
       }
+
 }
 
 
 });
 $('#submit-acct-btn').on('click', function (){
-    $('#myModal').modal('hide')
+    $('#myModal').modal('hide');
 })
+
+
 
 // });
