@@ -60,14 +60,22 @@
 
         <p>Fill out the following form: </p>
         <div class="form-group">
-            <label for="exampleFormControlInput1">Search via term</label>
-            <input type="search-term" class="form-control" id="exampleFormControlInput1" placeholder="ex. Concerts"><br>
-            <label for="exampleFormControlInput1">Zip Code</label>
-            <input type="zipcode" class="form-control" id="exampleFormControlInput1" placeholder="64112">
+            <label for="search-term">Search via term</label>
+            <input type="search-term" class="form-control" id="search_value" placeholder="ex. Concerts"><br>
+            <label for="zipcode">Zip Code</label>
+            <input type="zipcode" class="form-control" id="postalcode" placeholder="64112"><br>
+            <div class="form-group">
+            <label for="deal-count">Number of Deals</label>
+            <select id="deal-count">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+        </select>
+        </div>
         </div>
         <div class="form-group">
             <label for="exampleFormControlSelect1">Category</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <select class="form-control" id="category_list">
                 <option>Activities & Events</option>
                 <option>Audio & Accessories</option>
                 <option>Automotive</option>
@@ -147,7 +155,7 @@
         </div>
         <div class="form-group">
             <label for="exampleFormControlSelect2">Multiple Category Selection</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
+            <select multiple class="form-control" id="categories_list">
                 <option>Clothing</option>
                 <option>Retail-Services</option>
                 <option>Special-Interest</option>

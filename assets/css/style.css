@@ -160,3 +160,7 @@ form{
     z-index: 0 !important;
 }
 /* HACK ABOVE */
+
+#loginModal{
+    display:none;
+}
