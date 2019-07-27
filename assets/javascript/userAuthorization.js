@@ -108,7 +108,7 @@ $(document).ready(function () {
 
         // ################### Uncomment ############################
         //This is supposed to close the Login Modal after button is clicked
-        //$("#loginModal").modal('hide');
+        $("#loginModal").modal('hide');
 
         //Supposed to Redirect to homepage
         //window.location.href = "index.html";
@@ -149,10 +149,10 @@ $(document).ready(function () {
 
         //##################### Uncomment ################################
         //This is supposed to close the Register Modal after button is clicked
-        //$("#registerModal").modal('hide');
+        $("#registerModal").modal('hide');
 
         //Supposed to Redirect to homepage
-        window.location.href = "index.html";
+        //window.location.href = "index.html";
     });
 
 
@@ -166,7 +166,7 @@ $(document).ready(function () {
         state = "";
 
         //Supposed to Redirect to homepage
-        window.location.href = "index.html";
+        //window.location.href = "index.html";
 
     }
 
