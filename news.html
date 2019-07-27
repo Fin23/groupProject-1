@@ -33,7 +33,7 @@
     <!-- master -->
 </head>
 
-<body>
+<body background="images/business-news.jpg">
     <div id="container">
         <h3 class="center" styler="margin-bottom:20px">Hause-Book News<i
                 class="material icons medium hide-on-small-only" id="icons"></i></h3>
@@ -162,11 +162,30 @@
 
 
     <div class="row">
-        <div id="recent_news" class="seven2">most recent news</div>
-        <div id="news_by_location" class="five2">news closest by location</div>
-        <div id="favorites" class="five3">saved articles</div>
+        <div id="recent_news" class="seven2">
+            most recent news</div>
+
+        <button id="news_by_location" class="five2"><h1>Click box</h1>using geolocation to get latitude and longitude, news closest by location
+            <br>
+            <p1>latitude:<span id="latitude"></span>&deg;
+            <br>
+                longitude: <span id = "longitude"></span>&deg;</p1>
+                <br>
+                <p1>this is where you are currently</p1>
+</button>
+
+   
+        <div id="favorites" class="five3">attempting to pair geolocation with census data to get specific information about not just state and city but county, neighborhood, 
+                <input id="searchquery_census" class="form-control mr-sm-2"  type="text" placeholder="Census state #"
+                aria-label="Search">
+                type: 19 ; for Iowa 
+                <br>
+                type: 29 ; for Missouri
+        
+        </div>
     </div>
 
+    <img src=""id="mapImg">
 
 
 
@@ -179,8 +198,8 @@
 
 
 
-
-    <script src="javascript/news.js"></script>
+<!--main javascript file for html fns-->
+   
 
     <!--firebase-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
