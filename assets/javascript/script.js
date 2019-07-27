@@ -13,9 +13,9 @@
      $('#loginModal').modal('show');
   })
 
-    $('#myModal').modal('show');
+    $('#registerModal').modal('show');
 
-    var modal = document.getElementById("myModal");
+    var modal = document.getElementById("registerModal");
 
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
@@ -44,7 +44,7 @@
 
 });
 $('#submit-acct-btn').on('click', function (){
-    $('#myModal').modal('hide');
+    $('#registerModal').modal('hide');
 })
 
 
