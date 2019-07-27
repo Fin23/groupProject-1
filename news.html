@@ -11,16 +11,19 @@
     <link rel="stylesheet" type="text/css" href="css/grid.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <!--bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <title>News: Current & Local</title>
 
     <!--firebase-->
@@ -30,73 +33,134 @@
     <!-- master -->
 </head>
 
-<body background="images/apartments-architectural-design-architecture-404173.jpg">
-        <div id = "container" >
-            <h3   class ="center" styler = "margin-bottom:20px">Hause-Book News<i class ="material icons medium hide-on-small-only" id="icons"></i></h3>
-              <div id="loader" style = "display:none;"> 
-                <div class = "progress">
-                  <div class = "indeterminate">
-                    </div>
-                      </div>
-                        </div>
-        
-              <div id = "newsResults">
+<body>
+    <div id="container">
+        <h3 class="center" styler="margin-bottom:20px">Hause-Book News<i
+                class="material icons medium hide-on-small-only" id="icons"></i></h3>
+        <div id="loader" style="display:none;">
+            <div class="progress">
+                <div class="indeterminate">
                 </div>
-                    </div>
+            </div>
+        </div>
+
+        <div id="newsResults">
+        </div>
+    </div>
 
 
 
     <!-- add-html-skeleton -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a onclick="News()" class="navbar-brand" href="index.html">Home</a>
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h5 class="text-white h4">Navigation</h5>
+                <span class="text-muted">
+                    <ul class="listed-items">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="business.html">Local</a></li>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <div class="btn-group dropright">
+                            <button type="button" class="btn btn-secondary" id="dropright" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <li><a href="news.html">News</a></li>
+                            </button>
+                            <div class="dropdown-menu" id="menuItem">
+
+                                <li class="nav-item">
+                                    <a onclick="Politics()" class="nav-link" href="#">Politics</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a onclick="Tech()" class="nav-link" href="#">Tech</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a onclick="Style()" class="nav-link" href="#">Style</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a onclick="Sports()" class="nav-link" href="#">Sports</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a onclick="Food()" class="nav-link" href="#">Food</a>
+                                </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="  business.html  ">Business<span class="sr-only">(current)</span></a>
-                    </li>
-            <li class="nav-item">
-                <a onclick="Politics()" class="nav-link" href="#">Politics</a>
-                    </li>
-                
-            <li class="nav-item">
-                <a onclick="Tech()" class="nav-link" href="#">Tech</a>
-                    </li>
-                
-            <li class="nav-item">
-                <a onclick="Style()" class="nav-link" href="#">Style</a>
-                    </li>
-            <li class="nav-item">
-                <a onclick="Sports()" class="nav-link" href="#">Sports</a>
-                    </li>
-            <li class="nav-item">
-                <a onclick="Food()" class="nav-link" href="#">Food</a>
-                    </li>
-        </ul>
-
-    <form class="form-inline my-2 my-lg-0">
-        <div class ="input-field">
-            <i class = "material-icons prefix">public</i>
-                <input id ="searchquery" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    </div>
-                        <button id = "searchbtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            <input type = "reset" id = "searchbtn" class = "btn col m2 s12 red right" value="clear" style = "margin-top:3px;">
-        </form>
-
-
-
-    <div class="btn-group-vertical">
-        <button type="button" class="btn btn-secondary btn-sm" id="button2">Change Zip</button>
-            <button type="button" class="btn btn-secondary btn-sm" id="button2">Refresh</button>
+            </button>
+            <form class="form-inline my-2 my-md-0" id="input">
+                <div class="input-field">
+                    <i class="material-icons prefix">public</i>
+                    <input id="searchquery" class="form-control mr-sm-2" type="text" placeholder="Search"
+                        aria-label="Search">
                 </div>
+                <button id="searchbtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input type="reset" id="searchbtn" class="btn col m2 s12" value="clear">
+            </form>
+
+            <button type="button" class="btn btn-secondary btn-sm" id="button2">Change Zip</button>
+            <button type="button" class="btn btn-secondary btn-sm" id="button2">Refresh</button>
+    </div>
     </nav>
 
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a onclick="News()" class="navbar-brand" href="index.html">Home</a>
 
-    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="  business.html  ">Business<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="Politics()" class="nav-link" href="#">Politics</a>
+                </li>
+
+                <li class="nav-item">
+                    <a onclick="Tech()" class="nav-link" href="#">Tech</a>
+                </li>
+
+                <li class="nav-item">
+                    <a onclick="Style()" class="nav-link" href="#">Style</a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="Sports()" class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a onclick="Food()" class="nav-link" href="#">Food</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-field">
+                    <i class="material-icons prefix">public</i>
+                    <input id="searchquery" class="form-control mr-sm-2" type="text" placeholder="Search"
+                        aria-label="Search">
+                </div>
+                <button id="searchbtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input type="reset" id="searchbtn" class="btn col m2 s12 red right" value="clear"
+                    style="margin-top:3px;">
+            </form>
+
+
+
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-secondary btn-sm" id="button2">Change Zip</button>
+                <button type="button" class="btn btn-secondary btn-sm" id="button2">Refresh</button>
+            </div>
+    </nav> -->
+
+
+
     <div class="row">
         <div id="recent_news" class="seven2">most recent news</div>
         <div id="news_by_location" class="five2">news closest by location</div>
@@ -118,12 +182,12 @@
 
     <script src="javascript/news.js"></script>
 
-            <!--firebase-->
+    <!--firebase-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                                 
-            
-            <script src="javascript/firebase.js"></script>
-            <script src ="javascript/news.js"></script>
+
+
+    <script src="javascript/firebase.js"></script>
+    <script src="javascript/news.js"></script>
 
 </body>
 
