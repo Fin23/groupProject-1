@@ -164,3 +164,6 @@ form{
 #loginModal{
     display:none;
 }
+#myModal{
+    display: none;
+}
