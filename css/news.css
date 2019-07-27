@@ -1,9 +1,9 @@
 body, html {
-    background-image: url(../images/business-news.jpg); 
+    
     position: relative;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+  
     height: 100%;
     margin: 0;
     font-size: 16px;
@@ -122,10 +122,10 @@ span {
 	margin-left: 22%;
  }
  .border1{
-     margin-top:5%;
-     border: solid #3f4249 15px;
-     border-bottom: 7px;
-     border-radius: 5%;
+     border-bottom: 4px;
+     border: solid #3f4249 7px;
+   
+     
 
  }
  .center{
